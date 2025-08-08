@@ -1,0 +1,22 @@
+[package]
+name = "drawing-pad"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "drawing_pad"
+path = "src/lib.rs"
+
+[[bin]]
+name = "drawing-pad"
+path = "src/main.rs"
+
+[dependencies]
+skia-safe = { version = "0.87", features = ["gl"] }
+winit = "0.30"
+glutin = "0.32"
+glutin-winit = "0.5"
+raw-window-handle = "0.6"
+
+[build-dependencies]
+gl_generator = "0.14"
